@@ -20,6 +20,3 @@ class Pokemon
     self.db.execute("UPDATE pokemon SET hp = health WHERE name = self.name;")
   end
 end
-
-Once the hp column is set up there should be an instance method called alter_hp that will allow us to change a 
-specific pokemon's health to a new hp. It will need to take a new health power as a parameter.
