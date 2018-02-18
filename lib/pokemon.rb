@@ -16,7 +16,7 @@ class Pokemon
     poke
   end
 
-  def alter_hp(health)
+  def alter_hp(health, db)
     self.db.execute("UPDATE pokemon SET hp = health WHERE name = self.name;")
   end
 end
