@@ -3,7 +3,7 @@ class Pokemon
 
   def initialize(id:, name:, type:, db:)
     @id, @name, @type, @db = id, name, type, db
-    @hp = 60
+    self.hp = 60
   end
 
   def self.save(name, type, db)
