@@ -3,9 +3,8 @@ require 'pry'
 class Pokemon
   attr_accessor :id, :name, :type, :db, :hp
 
-  def initialize(id:, name:, type:, db:, hp:)
-    @id, @name, @type, @db = id, name, type, db
-    @hp = hp || 60
+  def initialize(id:, name:, type:, db:, hp = 60)
+    @id, @name, @type, @db, @hp = id, name, type, db, hp
   end
 
   def self.save(name, type, db)
